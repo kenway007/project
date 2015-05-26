@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equivmetahttp-equiv="x-ua-compatible" content="IE=7"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+
+    <title>油菜IT</title>
+</head>
+<body>
+    <div id="ibody" class="">
+        <div id="page-home" class="page frist-page"></div>
+        <div id="page-dyn" class="page "></div>
+        <div id="page-msg" class="page frist-page"></div>
+        <div id="page-me" class="page frist-page"></div>
+        <div id="page-person" class="page"></div>
+        <div id="page-company" class="page"></div>
+        <div id="page-person-dyn" class="page"></div>
+        <div id="page-map" class="page"></div>
+        <div id="page-person-reply" class="page"></div>
+        <div id="page-person-reply-post" class="page"></div>
+        <div id="page-company-list" class="page"></div>
+        <div id="page-login-wel" class="page"></div>
+        <div id="page-login" class="page"></div>
+        <div id="page-reg" class="page"></div>
+        <div id="page-forget-password" class="page"></div>
+        <div id="page-add-product-list" class="page"></div>
+        <div id="page-sel-identity" class="page"></div>
+        <div id="page-sel-product" class="page"></div>
+        <div id="page-sel-brand" class="page"></div>
+        <div id="page-sel-city" class="page"></div>
+        <div id="page-company-zs" class="page"></div>
+        <div id="page-sel-head" class="page"></div>
+        <div id="page-dyn-post" class="page"></div>
+        <div id="page-rank" class="page"></div>
+
+
+
+        <div class="pc-fixed nav" id="bottom-nav">
+            <div class="nav-box">
+                <div data-href="#/dyn" class="nav-item j-href">
+                    <div class="icon nav-item-icon nav-item-recent"></div>
+                    <div class="nav-item-text">分享</div>
+                </div>
+                <div data-href="#/home" class="nav-item j-href ">
+                    <div class="icon nav-item-icon nav-item-local"></div>
+                    <div class="nav-item-text">本地</div>
+                </div>
+
+                <div data-href="#/msg" class="nav-item j-href" style="display: none">
+                    <div class="icon nav-item-icon nav-item-msg"></div>
+                    <div class="nav-item-text">消息</div>
+                </div>
+                <div data-href="#/me" class="nav-item j-href end">
+                    <div class="icon nav-item-icon nav-item-me"></div>
+                    <div class="nav-item-text">我</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert" id="common-alert">
+            <div class="alert-mask"></div>
+            <div class="alert-text"></div>
+        </div>
+
+        <div class="alert" id="alert-white">
+            <div class="alert-mask"></div>
+            <div class="kw-box-center alert-text-box">
+                <div class="fa fa-spinner fa-spin alert-icon"></div>
+                <div class="alert-text"></div>
+            </div>
+        </div>
+
+        <div class="mask pc-fixed" id="globle-mask"></div>
+
+        <div class="mask pc-fixed" id="mask-white"></div>
+
+
+        <div class="globle-query-box" id="globle-query-box">
+            <div class="query-box-content"></div>
+            <div class="btns">
+                <div class="btns-item confirm">确定</div>
+                <div class="btns-item cancle">取消</div>
+            </div>
+        </div>
+
+
+        <div class="kw-pta-center kw-box-a-v loading" id="loading">
+            <div class="fa fa-spinner fa-spin loading-icon"></div>
+            <div class="loading-text">数据正在加载,请稍后...</div>
+        </div>
+        
+        <div class="pc-fixed download-tip" id="download-tip">
+            <div class="download-tip-mask"></div>
+            <div class="kw-box-center dlt-content ">
+                <div class="dltc-item dlt-content-l">
+                    <img src="img/logo_50.png" class="dltcl-logo">
+                </div>
+                <div class="dltc-item kw-text-over kw-box-v kw-flex1 dlt-content-m">
+                    <div class="kw-txt-li dltcm-title">油菜IT</div>
+                    <div class="kw-txt-li kw-text-over dltcm-text">IT行家社交+达人分享+O2O微电商</div>
+                </div>
+                <div class="dltc-item kw-box-center kw-flex1 dlt-content-r">
+                    <a href="http://app.ucaihua.cn/" class="dltr-dl-btn">点击下载</a>
+                    <div class="fa fa-close dltr-close"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+<script src="js/seajs/sea.js"></script>
+<!--<script src="js/widget/jweixin-1.0.0.js"></script>-->
+<script>
+    seajs.config({
+        dir_app : './js/',
+        alias : {
+            net : 'core/net',
+            lang : 'core/lang',
+            cookie : 'core/cookie',
+            iScroll : 'widget/iscroll',
+            mList : 'widget/mList',
+            data : 'core/data',
+            form : 'widget/form',
+            ui : 'widget/ui',
+            banner : 'widget/banner',
+            favorite : 'widget/favorite',
+            head2 : 'tpl/head2.tpl'
+        }
+    })
+    try{
+        seajs.use('app.js',function (app){
+            app.start();
+        })
+    }catch(e){
+        alert(e)
+    }
+
+</script>
+
