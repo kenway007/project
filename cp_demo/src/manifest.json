@@ -1,0 +1,45 @@
+{
+    "name": "ECP",
+
+    "version": "1.0.0",
+
+    "manifest_version": 2,
+
+    "description": "",
+
+
+    "background": {
+        "matches":["*://*/*"],
+        "scripts": [
+            "static/js/ecp.js",
+            "static/js/bg.js"
+        ]
+    },
+
+    "permissions": ["tabs", "*://*/*","notifications"],
+
+    "icons" : {
+        "16": "static/img/icon.png",
+        "48": "static/img/icon.png",
+        "128" : "static/img/icon.png"
+    },
+
+    "browser_action": {
+        "matches":["*://*/*"],
+        "default_icon": "static/img/icon.png",
+        "default_title": "ECP",
+        "default_popup": "popup.html"
+
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "web_accessible_resources" : [],
+    "content_scripts":[{
+        "matches":["*://*/*"],
+        "js":[
+            "static/js/jquery_2.0.3.js",
+            "static/js/ecp.js",
+            "static/js/content.js"
+        ]
+
+    }]
+}

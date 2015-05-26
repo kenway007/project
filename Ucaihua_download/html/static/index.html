@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equivmetahttp-equiv="x-ua-compatible" content="IE=7"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+
+    <title>油菜IT-APP下载</title>
+</head>
+<body>
+    <div id="ibody" class="">
+        <div id="page-download" class="page"></div>
+        <div class="mask pc-fixed" id="globle-mask"></div>
+    </div>
+</body>
+</html>
+
+
+<script src="js/seajs/sea.js"></script>
+<script>
+    seajs.config({
+        dir_app : './js/',
+        alias : {
+            banner : 'widget/banner',
+            net : 'core/net',
+            iScroll : 'widget/iscroll'
+        }
+    })
+    seajs.use('app.js',function (app){
+        app.start();
+    })
+</script>
+
